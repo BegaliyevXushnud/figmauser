@@ -7,12 +7,24 @@
     font-family: Heebo;
     src: url(../fontlar/Heebo/static/Heebo-SemiBold.ttf);
 }
+body{
+    background: url(../image/dengiz.gif) no-repeat ;
+    background-size: cover;
+}
 .container{
     width: 1152px;
     height: 2200px;
 
     margin: 0 auto;
     margin-top: 2cm;
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0,0 , 0.37);
 }
 .user{
     width: 1152px;
@@ -37,6 +49,10 @@ header ul li{
     line-height: 29.38px;
     text-align: right;   
     cursor: pointer;
+}
+header a{
+    text-decoration: none;
+    color: black;
 }
 header ul li:hover{
     transition: 0.2s;
@@ -123,7 +139,7 @@ transform: scale(1.2);
 .post{
     width: 1152px;
     height: 400px;
-    background-color: aliceblue;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +150,7 @@ margin-top: 0cm;
 .posts{
     width: 418px;
     height:295px;
-    background-color: white;
+   
     display: flex;
     flex-direction: column;
     gap: 20px;
